@@ -1,2 +1,10 @@
 flex:弹性布局  块级display:flex   行内display:inline-flex
-    1>
+    1>Webkit内核的浏览器，必须加上-webkit前缀。
+    2>设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。
+    3>属性
+        flex-direction:row | row-reverse | column | column-reverse;//主轴方向(项目排列方向)
+        flex-wrap:nowrap | wrap | wrap-reverse;//item不在一行时候如何换行
+        flex-flow: <flex-direction> || <flex-wrap>;
+        justify-content: flex-start | flex-end | center | space-between | space-around;//主轴对齐方式
+        align-items: flex-start | flex-end | center | baseline | stretch;//交叉轴对齐方式.(stretch默认值,高度未知或者auto时候,充满容器)
+        align-content:flex-start | flex-end | center | space-between | space-around | stretch;//
