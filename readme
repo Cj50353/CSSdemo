@@ -1,0 +1,10 @@
+1>max-width;设置最大宽度可以防止浏览器缩小宽度出现,滚动条(ie7+ √)
+2>margin:0 auto;在块级元素有宽度的时候,元素会占据所指定的宽度，然后剩余的宽度会一分为二成为左右外边距,实现水平居中.
+3>box-size:content-box:(css3 ie8+ √)
+           此值维持css2.1盒模型的组成模式，border|padding|content {element width=border+padding+content}
+           border-box:
+           此值改变css2.1盒模型组成模式，content|border|padding {element width=content}
+           设置border-box时,改变padding和border不会改变元素宽度.
+4>max-width|max-height overflow:auto 当内容超过最大宽高的时候出现滚动条,反之隐藏
+5>clearfix:用在外部容器上,使在内部有元素浮动时,闭合容器.
+6>

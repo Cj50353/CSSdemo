@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body{
+            height: 30px;
+        /*    max-height: 150px;
+            overflow-y: auto;*/
+        }
+        .fixed{
+            width: 130px;
+            background: indianred;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            max-height: 150px;
+            overflow-x: auto;
+        }
+        .absolute{
+            position: relative;
+            min-height: 300px;
+        }
+        nav{
+            position: absolute;
+            width:150px;
+            height: 100%;
+            border: 1px solid royalblue;
+        }
+        section{
+            padding: 30px;
+            border: 3px solid red;
+            background-color:bisque;
+            margin-left:150px;
+        }
+
+    </style>
+</head>
+
+<body>
+<p>hello~~~~~~~~~</p>
+<p>hello~~~~~~~~~</p>
+<p>hello~~~~~~~~~</p>
+<p>hello~~~~~~~~~</p>
+<p>hello~~~~~~~~~</p>
+<p>hello~~~~~~~~~</p>
+<p>hello~~~~~~~~~</p>
+<p>hello~~~~~~~~~</p>
+<p>hello~~~~~~~~~</p>
+<p>hello~~~~~~~~~</p>
+<p>hello~~~~~~~~~</p>
+<p>hello~~~~~~~~~</p>
+    <div class="fixed">
+        <p>hello~~~~~~~~~</p>
+        <p>hello~~~~~~~~~</p>
+        <p>hello~~~~~~~~~</p>
+        <p>hello~~~~~~~~~</p>
+        <p>hello~~~~~~~~~</p>
+        <p>hello~~~~~~~~~</p>
+        <p>hello~~~~~~~~~</p>
+        <p>hello~~~~~~~~~</p>
+    </div>
+</body>
+
+
+<div class="absolute">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Home2</li>
+            <li>Home3</li>
+            <li>Home4</li>
+        </ul>
+    </nav>
+    <section>section s的 margin-left 样式确保了有足够的空间容纳 nav 元素。</section>
+    <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</section>
+    <section>注意当你调整浏览器窗口时发生了什么。效果很赞！</section>
+</div>
+</html>
