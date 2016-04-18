@@ -8,3 +8,5 @@ flex:弹性布局  块级display:flex   行内display:inline-flex
         justify-content: flex-start | flex-end | center | space-between | space-around;//主轴对齐方式
         align-items: flex-start | flex-end | center | baseline | stretch;//交叉轴对齐方式.(stretch默认值,高度未知或者auto时候,充满容器)
         align-content:flex-start | flex-end | center | space-between | space-around | stretch;//
+        align-self: center;//设置于单个元素,覆盖align-items
+

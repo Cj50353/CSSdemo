@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../库/reset.css"/>
+    <link rel="stylesheet" href="../库/zxx.lib.css"/>
+    <style type="text/css">
+        a {
+            color:#eeeeee;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a,a:hover {
+            color: #51B8F1;
+        }
+        .g-nav{
+            height: 30px;
+            background-color: #c7edcc;
+        }
+        .m-wrap{
+            margin: 0 auto;
+            width: 960px;
+        }
+        .g-nav-l,.g-nav-r{
+            line-height: 30px;
+        }
+        .m-nav-myDuobao-menu{
+            display: none;
+
+        }
+        .m-nav-myDuobao-menu-hover.m-nav-myDuobao-menu-hover{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="g-nav">
+        <div class="m-wrap">
+            <div class="g-nav-l l">
+                <span class="m-nav-welcome">欢迎来到网易一元夺宝</span>
+            </div>
+            <ul class="g-nav-r r">
+                <li class="m-nav-login l ml5">
+                    <a class='mr5' href="#">请登录</a><a href="#">请注册</a>
+                </li>
+                <li class="m-nav-myDuobao l ml5" id='m-nav-myDuobao'>
+                    <a class='m-nav-myDuobao-btn trans' href="#">我的夺宝</a>
+                    <ul class="m-nav-myDuobao-menu">
+                        <li class="m-nav-myDuobao-1"><a href="#">夺宝记录</a></li>
+                        <li class="m-nav-myDuobao-2"><a href="#">幸运夺宝</a></li>
+                        <li class="m-nav-myDuobao-3"><a href="#">购买记录</a></li>
+                        <li class="m-nav-myDuobao-4"><a href="#">我的宝石</a></li>
+                        <li class="m-nav-myDuobao-5"><a href="#">账户充值</a></li>
+                    </ul>
+                </li>
+                <li class="m-nav-myBonus l ml5">
+                    <a href="#">我的红包</a>
+                </li>
+                <li class="l ml5"><a href="#">官方微博</a></li>
+                <li class="l ml5"><a href="#">官方交流群</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="../库/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+   /* window.onload= function () {
+        document.getElementById('m-nav-myDuobao-btn').addEventListener('mouseover',function(e){
+            console.log(e);
+            e.target.className('m-nav-myDuobao-btn m-nav-myDuobao-btn-hover');
+        },false);
+    }*/
+
+    $(function () {
+        $('#m-nav-myDuobao').hover(function(){
+            console.log('hover');
+            $('.m-nav-myDuobao-menu').addClass('m-nav-myDuobao-menu-hover');
+        }, function () {
+            console.log('hover2');
+            $('.m-nav-myDuobao-menu').removeClass('m-nav-myDuobao-menu-hover');
+        })
+    })
+</script>
+</body>
+</html>
