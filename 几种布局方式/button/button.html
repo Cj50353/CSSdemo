@@ -12,12 +12,12 @@
         }
 
         .x_b_p {
-            float: left;
             border-left: 1px solid #FBD0B2;
             border-right: 1px solid #F9B88C;
             border-bottom: 1px solid #F9B88C;
+            position: relative;/*ie6以下 margin负值在relative情况下起作用*/
+            float: left;
             margin: 0 -1px;
-            position: relative;
         }
 
         .x_c_p {
