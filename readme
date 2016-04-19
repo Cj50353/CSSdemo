@@ -7,4 +7,19 @@
            设置border-box时,改变padding和border不会改变元素宽度.
 4>max-width|max-height overflow:auto 当内容超过最大宽高的时候出现滚动条,反之隐藏
 5>clearfix:用在外部容器上,使在内部有元素浮动时,闭合容器.
-6>
+6>columns: column-width column-count;(css3 ie10+ √)  用于文字分列
+       →column-gap:column-width;
+       →column-count:countNun;
+       →column-rule:width style color;
+7>display:flex
+     flex:弹性布局  块级display:flex   行内display:inline-flex
+         1>Webkit内核的浏览器，必须加上-webkit前缀。
+         2>设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。
+         3>属性
+             flex-direction:row | row-reverse | column | column-reverse;//主轴方向(项目排列方向)
+             flex-wrap:nowrap | wrap | wrap-reverse;//item不在一行时候如何换行
+             flex-flow: <flex-direction> || <flex-wrap>;
+             justify-content: flex-start | flex-end | center | space-between | space-around;//主轴对齐方式
+             align-items: flex-start | flex-end | center | baseline | stretch;//交叉轴对齐方式.(stretch默认值,高度未知或者auto时候,充满容器)
+             align-content:flex-start | flex-end | center | space-between | space-around | stretch;//
+             align-self: center;//设置于单个元素,覆盖align-items

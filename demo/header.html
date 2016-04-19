@@ -22,9 +22,10 @@
             height: 30px;
             background-color: #c7edcc;
         }
+
         .m-wrap{
-            margin: 0 auto;
             width: 960px;
+            margin: 0 auto;
         }
         .g-nav-l,.g-nav-r{
             line-height: 30px;
@@ -37,6 +38,28 @@
             display: block;
         }
 
+        .g-header{
+            height: 80px;
+            background: #31ffbe;
+        }
+        .g-header-l{
+
+        }
+        /*背景图片链接*/
+        .m-header-logo-link{
+            display: block;
+            padding-top: 49px;
+            width: 147px;
+            height: 0;
+            overflow: hidden;
+            background: url('./image/yy_logo.gif') no-repeat;
+        }
+        /*组件:搜索框*/
+        .w-search{
+            width: 310px;
+            height: 32px;
+            
+        }
     </style>
 </head>
 <body>
@@ -67,6 +90,29 @@
             </ul>
         </div>
     </nav>
+    <h1 class="dn">一元夺宝</h1>
+    <header class="g-header">
+        <div class="m-wrap">
+            <div class="g-header-l l">
+                <h1 class="m-header-logo dib">
+                    <a class="m-header-logo-link" href="/">
+                    </a>
+                </h1>
+                <div class="m-header-2code dib">
+                    <a href="" target="_blank">
+                        <img src="http://mimg.127.net/p/yy/hd/150602_appprompt/logo_banner_v3.png"/>
+                    </a>
+                </div>
+            </div>
+            <div class="g-header-r r">
+                <form action="" method="get" id="">
+                    <label for="s" class="hidden"></label>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
     <script src="../库/jquery-1.11.0.min.js"></script>
 <script type="text/javascript">
    /* window.onload= function () {
